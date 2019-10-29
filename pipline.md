@@ -28,8 +28,11 @@ gffread longcodingRNA.gff3 -T -o noncodingRNA.gtf
 cat noncodingRNA.gtf | cut -f1,4,5,9 | cut -f1 -d";" | awk '{print $1, $2, $3, $5}' | sed -e 's/ /\t/g' | sed -e 's/\"//g' | sed -e 's/transcript\://g' > noncodingRNA.bed 
 
 ##txt转bed
-现在还没有解决
+##直接在R里面操作
+A <- read.table("DHS.bed.txt")
+write.table(A,file="DHS.bed",sep="\t",row.names = FALSE,col.names = FALSE,quote = FALSE)
+
 ```
 
-## 模型构建（参考两篇science论文）
+## 模型构建
 
