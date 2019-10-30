@@ -36,3 +36,5 @@ write.table(A,file="DHS.bed",sep="\t",row.names = FALSE,col.names = FALSE,quote 
 
 ## 模型构建
 
+### 基于文献：“Mutation hotspots at CTCF binding sites coupled to chromosomal instability in gastrointestinal cancers”
+
