@@ -30,7 +30,7 @@ cat noncodingRNA.gtf | cut -f1,4,5,9 | cut -f1 -d";" | awk '{print $1, $2, $3, $
 ##txt转bed
 ##直接在R里面操作
 A <- read.table("DHS.bed.txt")
-write.table(A,file="DHS.bed",sep="\t",row.names = FALSE,col.names = FALSE,quote = FALSE)
+write.table(A,file="DHS.bed",sep="/t",row.names = FALSE,col.names = FALSE,quote = FALSE)
 
 ```
 
